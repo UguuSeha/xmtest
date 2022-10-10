@@ -1,0 +1,8 @@
+framework:
+    http_client:
+        scoped_clients:
+            rapidapi.client:
+                base_uri: '%env(RAPID_API_BASE_URI)%'
+                headers:
+                    X-RapidAPI-Host: '%env(RAPID_API_HOST)%'
+                    X-RapidAPI-Key: '%env(RAPID_API_TOKEN)%'
